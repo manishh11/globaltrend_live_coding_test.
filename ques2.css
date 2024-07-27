@@ -1,0 +1,31 @@
+.hamburger{
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span{
+    height: 3px;
+    width: 25px;
+    background-color: white ;
+    margin: 4px 0;
+    transition: 0.5s;
+}
+@media(max-width: 768px){
+    .nav-links{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+    .nav-links a {
+        text-align: center;
+        padding: 15px;
+        border-top: 1px solid black;
+    }
+    .hamburger{
+        display: flex;
+    }
+    .nav-links.show{
+        display: flex;
+    }
+}
